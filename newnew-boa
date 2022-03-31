@@ -27,6 +27,7 @@ node{
     sh "scp -o StrictHostKeyChecking=no target/*war ec2-user@52.90.105.219:/opt/tomcat9/webapps/app.war"
 }  
         }
+        /*
         stage('8 emailalerts'){
             emailext body: '''Hi
 
@@ -35,4 +36,5 @@ Build status for boa app
 regards
 Nkeng''', recipientProviders: [developers(), requestor()], subject: 'project status', to: ' zarankeng@gmail.com'
         }
+        */
 }
